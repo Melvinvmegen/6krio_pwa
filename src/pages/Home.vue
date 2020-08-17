@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     Header
-    //- Banner
+    Banner
     //- Home
     //- Gallery
     //- Testimonials
@@ -10,7 +10,7 @@
 
 <script>
 import Header from '@/containers/Header/Header'
-// import Banner from '@/containers/Banner/Banner'
+import Banner from '@/containers/Banner/Banner'
 // import Home from '@/containers/Home/Home'
 // import Gallery from '@/containers/Gallery/Gallery'
 // import Testimonials from '@/containers/Testimonials/Testimonials'
@@ -18,8 +18,8 @@ import Header from '@/containers/Header/Header'
 
 export default {
   components: {
-    Header
-    // Banner,
+    Header,
+    Banner
     // Home,
     // Gallery,
     // Testimonials,
