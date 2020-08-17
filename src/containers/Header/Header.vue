@@ -67,7 +67,7 @@ export default {
     top: 0;
     width: 100%;
     z-index: 999;
-    min-height: 106px;
+    min-height: 155px;
   }
 
   .site-header-wrapper {
