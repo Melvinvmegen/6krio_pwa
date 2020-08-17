@@ -2,7 +2,7 @@
   div
     Header
     Banner
-    //- Home
+    Home
     //- Gallery
     //- Testimonials
     //- Footer
@@ -11,7 +11,7 @@
 <script>
 import Header from '@/containers/Header/Header'
 import Banner from '@/containers/Banner/Banner'
-// import Home from '@/containers/Home/Home'
+import Home from '@/containers/Home/Home'
 // import Gallery from '@/containers/Gallery/Gallery'
 // import Testimonials from '@/containers/Testimonials/Testimonials'
 // import Footer from '@/containers/Footer/Footer'
@@ -19,8 +19,8 @@ import Banner from '@/containers/Banner/Banner'
 export default {
   components: {
     Header,
-    Banner
-    // Home,
+    Banner,
+    Home
     // Gallery,
     // Testimonials,
     // Footer
