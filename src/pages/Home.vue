@@ -5,7 +5,7 @@
     Home
     //- Gallery
     //- Testimonials
-    //- Footer
+    Footer
 </template>
 
 <script>
@@ -14,16 +14,16 @@ import Banner from '@/containers/Banner/Banner'
 import Home from '@/containers/Home/Home'
 // import Gallery from '@/containers/Gallery/Gallery'
 // import Testimonials from '@/containers/Testimonials/Testimonials'
-// import Footer from '@/containers/Footer/Footer'
+import Footer from '@/containers/Footer/Footer'
 
 export default {
   components: {
     Header,
     Banner,
-    Home
+    Home,
     // Gallery,
     // Testimonials,
-    // Footer
+    Footer
   }
 }
 </script>
@@ -52,6 +52,14 @@ export default {
   .section-anchor {
     position: absolute;
     top: -106px;
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  .center {
+    text-align: center;
   }
 
  @media (max-width: 425px) {
