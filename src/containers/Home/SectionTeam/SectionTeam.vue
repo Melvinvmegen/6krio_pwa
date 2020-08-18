@@ -20,12 +20,66 @@ export default {
   data () {
     return {
       Members: [
-        { id: 1, name: 'HUGO BORDES', title: 'EXECUTIVE DIRECTOR', img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm', fb: '', insta: '' },
-        { id: 2, name: 'LUCAS JAMELIN', title: 'LABEL MANAGER', img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm', fb: '', insta: '' },
-        { id: 3, name: 'ZOHRA HACHANI', title: 'TRADE MARKETING MANAGER', img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm', fb: '', insta: '' },
-        { id: 4, name: 'THOMAS GOZZO', title: 'GRAPHIC DESIGNER', img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm', fb: '', insta: '' },
-        { id: 5, name: 'SIMON SIROT', title: 'GRAPHIC DESIGNER ', img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm', fb: '', insta: '' },
-        { id: 6, name: 'MELVIN VANMEGEN', title: 'WEBDEVELOPER ', img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm', fb: '', insta: '' }
+        {
+          id: 1,
+          name: 'HUGO BORDES',
+          title: 'EXECUTIVE DIRECTOR',
+          img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm',
+          icons: [
+            { icon: 'fa-facebook', href: '' },
+            { icon: 'fa-instagram', href: '' }
+          ]
+        },
+        {
+          id: 2,
+          name: 'LUCAS JAMELIN',
+          title: 'LABEL MANAGER',
+          img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm',
+          icons: [
+            { icon: 'fa-facebook', href: '' },
+            { icon: 'fa-instagram', href: '' }
+          ]
+        },
+        {
+          id: 3,
+          name: 'ZOHRA HACHANI',
+          title: 'TRADE MARKETING MANAGER',
+          img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm',
+          icons: [
+            { icon: 'fa-facebook', href: '' },
+            { icon: 'fa-instagram', href: '' }
+          ]
+        },
+        {
+          id: 4,
+          name: 'THOMAS GOZZO',
+          title: 'GRAPHIC DESIGNER',
+          img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm',
+          icons: [
+            { icon: 'fa-facebook', href: '' },
+            { icon: 'fa-instagram', href: '' }
+          ]
+        },
+        {
+          id: 5,
+          name: 'SIMON SIROT',
+          title: 'GRAPHIC DESIGNER',
+          img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm',
+          icons: [
+            { icon: 'fa-facebook', href: '' },
+            { icon: 'fa-instagram', href: '' }
+          ]
+        },
+        {
+          id: 6,
+          name: 'MELVIN VANMEGEN',
+          title: 'WEB DEVELOPER',
+          img: 'https://kitt.lewagon.com/placeholder/users/arthur-littm',
+          icons: [
+            { icon: 'fa-facebook', href: '' },
+            { icon: 'fa-instagram', href: '' }
+          ]
+        }
       ]
     }
   }

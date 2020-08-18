@@ -3,15 +3,18 @@
     img(class="avatar-large" alt="avatar-large" :src="member.img")
     span.name {{ member.name }}
     span.avatar-title {{ member.title }}
-    .social-media-icons
-      a(:href="member.fb")
-        i.icon.fab.fa-facebook
-      a(:href="member.insta")
-        i.icon.fab.fa-instagram
+    social-media(:icons="member.icons")
 </template>
 
 <script>
+
+import socialMedia from '@/components/SocialMedia/SocialMedia'
+
 export default {
+  components: {
+    socialMedia
+  },
+
   props: {
     member: Object
   }
@@ -37,12 +40,6 @@ export default {
     width: 90px;
     border-radius: 50%;
     margin-bottom: 10px;
-  }
-
-  .social-media-icons {
-    display: flex;
-    justify-content: space-evenly;
-    width: 80%;
   }
 
   .name {
