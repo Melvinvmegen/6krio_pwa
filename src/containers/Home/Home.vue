@@ -1,23 +1,29 @@
 <template lang="pug">
   div
-    //- SectionLabel
-    //- SectionStudio
+    SectionLabel
+    SectionStudio
     SectionBeat
     SectionTeam
+    SectionPartners
+    SectionContact
 </template>
 
 <script>
-// import SectionLabel from '@/containers/Home/SectionLabel/SectionLabel'
-// import SectionStudio from '@/containers/Home/SectionStudio/SectionStudio'
+import SectionLabel from '@/containers/Home/SectionLabel/SectionLabel'
+import SectionStudio from '@/containers/Home/SectionStudio/SectionStudio'
 import SectionBeat from '@/containers/Home/SectionBeat/SectionBeat'
 import SectionTeam from '@/containers/Home/SectionTeam/SectionTeam'
+import SectionPartners from '@/containers/Home/SectionPartners/SectionPartners'
+import SectionContact from '@/containers/Home/SectionContact/SectionContact'
 
 export default {
   components: {
-    // SectionLabel
-    // SectionStudio,
+    SectionLabel,
+    SectionStudio,
     SectionBeat,
-    SectionTeam
+    SectionTeam,
+    SectionPartners,
+    SectionContact
   }
 }
 </script>
