@@ -1,5 +1,6 @@
 <template lang="pug">
   .section.section-one(id="section-beat")
+    section-title(text="BEATS")
     a.section-anchor(id='Beat')
     .section-main
       .section-wrapper
@@ -15,10 +16,12 @@
 <script>
 
 import AvatarProfil from '@/components/AvatarProfil/AvatarProfil'
+import SectionTitle from '@/components/SectionTitle/SectionTitle'
 
 export default {
   components: {
-    AvatarProfil
+    AvatarProfil,
+    SectionTitle
   },
   data () {
     return {

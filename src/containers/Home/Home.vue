@@ -35,6 +35,8 @@ export default {
     min-height: 90vh;
     position: relative;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .title-bold {

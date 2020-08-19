@@ -1,5 +1,6 @@
 <template lang="pug">
   .section.section-studio(id="section-studio")
+    section-title(text="STUDIO" :rightSide="true")
     a.section-anchor(id='Studio')
     .section-main
       .section-wrapper
@@ -14,8 +15,11 @@
 
 <script>
 
+import SectionTitle from '@/components/SectionTitle/SectionTitle'
+
 export default {
   components: {
+    SectionTitle
   },
   data () {
     return {
