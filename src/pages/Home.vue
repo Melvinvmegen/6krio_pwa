@@ -62,6 +62,10 @@ export default {
     text-align: center;
   }
 
+  .flex {
+    display: flex;
+  }
+
  @media (max-width: 425px) {
     h1 {
       line-height: 1.5;

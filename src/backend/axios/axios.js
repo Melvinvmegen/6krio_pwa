@@ -36,7 +36,7 @@ securedAxioSIntance.interceptors.response.use(null, error => {
         localStorage.csrf = response.data.crsf
         localStorage.signedIn = true
 
-        let retryConfig = error.response.config
+        const retryConfig = error.response.config
         retryConfig.headers['X-CSRF-TOKEN'] = localStorage.csrf
         return plainAxiosIntance.request(retryConfig)
       }).catch(error => {

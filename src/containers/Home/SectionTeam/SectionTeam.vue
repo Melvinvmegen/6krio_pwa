@@ -1,5 +1,6 @@
 <template lang="pug">
   .section.section-team(id="section-team")
+    section-title(text="TEAMS" :rightSide="true")
     a.section-anchor(id='team')
     .section-main
       .section-wrapper
@@ -12,10 +13,12 @@
 <script>
 
 import AvatarProfil from '@/components/AvatarProfil/AvatarProfil'
+import SectionTitle from '@/components/SectionTitle/SectionTitle'
 
 export default {
   components: {
-    AvatarProfil
+    AvatarProfil,
+    SectionTitle
   },
   data () {
     return {

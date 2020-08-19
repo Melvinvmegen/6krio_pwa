@@ -1,5 +1,6 @@
 <template lang="pug">
   .section.section-contact(id="section-contact")
+    section-title(text="CONTACT")
     a.section-anchor(id='contact')
     .section-main
       .section-wrapper
@@ -11,10 +12,12 @@
 <script>
 
 import contactForm from '@/components/ContactForm/ContactForm'
+import SectionTitle from '@/components/SectionTitle/SectionTitle'
 
 export default {
   components: {
-    contactForm
+    contactForm,
+    SectionTitle
   },
   data () {
     return {
