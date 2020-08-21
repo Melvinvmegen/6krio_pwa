@@ -1,7 +1,7 @@
 <template lang="pug">
   div.header-contact
     span
-      a.cta-button(:class="[className ? 'hire-me' : 'sticky-hire-me']" title="hire-me") {{ text }}
+      a.cta-button(:class="[className ? 'black-button' : 'white-button']" title="hire-me") {{ text }}
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
     font-size: 16px;
     font-weight: 700;
     border: 1px solid transparent;
-    border-radius: 0.325rem;
+    border-radius: 0.5rem;
     padding: 1rem 1.5rem;
   }
 
@@ -35,27 +35,26 @@ export default {
     display: inline-block;
   }
 
-  .hire-me {
-    background: #254A5D;
+  .black-button {
+    background: #000;
     border: 2px solid #fff !important;
     color: #fff !important;
   }
 
-  .hire-me:hover {
+  .black-button:hover {
     background: transparent;
-    border: 2px solid #254A5D !important;
-    color: #254A5D !important;
+    border: 2px solid #000 !important;
+    color: #000 !important;
   }
 
-  .sticky-hire-me {
-    border: 2px solid #fff !important;
+  .white-button {
+    background: #fff;
+    border: 2px solid #000 !important;
     border-radius: 8px;
-    color: #fff !important;
+    color: #000 !important;
   }
 
-  .sticky-hire-me:hover {
-    background: #254A5D;
-    color: white !important;
-    border: 2px solid white;
+  .white-button:hover {
+    color: #000 !important;
   }
 </style>
