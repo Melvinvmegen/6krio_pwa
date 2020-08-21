@@ -1,6 +1,6 @@
-<template lang="pug">
-  .section.section-label(id="section-label")
-    section-title(text="LABEL")
+<template lang='pug'>
+  .section.section-label(id='section-label')
+    section-title(text='LABEL')
     a.section-anchor(id='Label')
     .section-main
       .section-wrapper
@@ -18,19 +18,27 @@
             .right ACCESSIBILITE
               .border-title
             span.featured-item-body Un accompagnement personnalise des plus performant qui place l’humain au coeur du process, au centre de l‘attention en evitant l’intrusivite creative si classique de cette industrie. Couper avec les standards en mettant l’accent sur l’epanouissement des artistes et ainsi faciliter le processus creatif propre a chacun.
+      service(:services='services')
 </template>
 
 <script>
 
 import SectionTitle from '@/components/SectionTitle/SectionTitle'
+import Service from '@/components/Service/Service'
 
 export default {
   components: {
-    SectionTitle
+    SectionTitle,
+    Service
   },
   data () {
     return {
-
+      services: [
+        { id: 0, title: 'MIX & MASTERING', img: 'https://source.unsplash.com/random/240x200', text: ['Identite visuelles, community management... VOUS SOUHAITEZ ETRE ACCOMPAGNER PAR DES PROFESSIONNELS DE LA MUSIQUE, DU MARKETING ET DE L’AUDIOVISUEL ?', 'NOUS GERONS POUR VOUS LA DISTRIBUTION DE VOTRE MUSIQUE SUR LES PLATEFORMES DE STREAMING ET VOUS RECUPEREZ 100% DE VOS ROYALTIES. TROIS OFFRES POSSIBLES :', '1-3 SONS - 9.99€/an', '4-9 SONS - 19.99€/an', '10+ SONS - 49.99€/an', 'EXPLIQUEZ NOUS VOTRE PROJET, VOTRE AMBITION ET NOUS SERONS A MÊME DE REPONDRE A VOS BESOINS DANS LES PLUS BREFS DELAIS !'] },
+        { id: 1, title: 'RECORDING STUDIO', img: 'https://source.unsplash.com/random/240x200', text: ['Identite visuelles, community management... VOUS SOUHAITEZ ETRE ACCOMPAGNER PAR DES PROFESSIONNELS DE LA MUSIQUE, DU MARKETING ET DE L’AUDIOVISUEL ?', 'NOUS GERONS POUR VOUS LA DISTRIBUTION DE VOTRE MUSIQUE SUR LES PLATEFORMES DE STREAMING ET VOUS RECUPEREZ 100% DE VOS ROYALTIES. TROIS OFFRES POSSIBLES :', '1-3 SONS - 9.99€/an', '4-9 SONS - 19.99€/an', '10+ SONS - 49.99€/an', 'EXPLIQUEZ NOUS VOTRE PROJET, VOTRE AMBITION ET NOUS SERONS A MÊME DE REPONDRE A VOS BESOINS DANS LES PLUS BREFS DELAIS !'] },
+        { id: 2, title: 'EQUIPEMENT', img: 'https://source.unsplash.com/random/240x200', text: ['Identite visuelles, community management... VOUS SOUHAITEZ ETRE ACCOMPAGNER PAR DES PROFESSIONNELS DE LA MUSIQUE, DU MARKETING ET DE L’AUDIOVISUEL ?', 'NOUS GERONS POUR VOUS LA DISTRIBUTION DE VOTRE MUSIQUE SUR LES PLATEFORMES DE STREAMING ET VOUS RECUPEREZ 100% DE VOS ROYALTIES. TROIS OFFRES POSSIBLES :', '1-3 SONS - 9.99€/an', '4-9 SONS - 19.99€/an', '10+ SONS - 49.99€/an', 'EXPLIQUEZ NOUS VOTRE PROJET, VOTRE AMBITION ET NOUS SERONS A MÊME DE REPONDRE A VOS BESOINS DANS LES PLUS BREFS DELAIS !'] },
+        { id: 3, title: 'RATE CARD', img: 'https://source.unsplash.com/random/240x200', text: ['Identite visuelles, community management... VOUS SOUHAITEZ ETRE ACCOMPAGNER PAR DES PROFESSIONNELS DE LA MUSIQUE, DU MARKETING ET DE L’AUDIOVISUEL ?', 'NOUS GERONS POUR VOUS LA DISTRIBUTION DE VOTRE MUSIQUE SUR LES PLATEFORMES DE STREAMING ET VOUS RECUPEREZ 100% DE VOS ROYALTIES. TROIS OFFRES POSSIBLES :', '1-3 SONS - 9.99€/an', '4-9 SONS - 19.99€/an', '10+ SONS - 49.99€/an', 'EXPLIQUEZ NOUS VOTRE PROJET, VOTRE AMBITION ET NOUS SERONS A MÊME DE REPONDRE A VOS BESOINS DANS LES PLUS BREFS DELAIS !'] }
+      ]
     }
   }
 }

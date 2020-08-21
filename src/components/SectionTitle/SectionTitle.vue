@@ -19,6 +19,7 @@ export default {
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
+    margin-top: 5%;
   }
 
   .rightSide {
