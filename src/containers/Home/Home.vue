@@ -68,7 +68,7 @@ export default {
     margin-top: 100px;
     flex-direction: column;
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     align-items: center;
   }
 

@@ -3,7 +3,7 @@
     .site-header-wrapper(:class="{'sticky-header': sticky, 'disappear' : disappear}")
       header(:class="{'mobile mobile-menu': showMobileNav, 'main-header' : !showMobileNav}")
         Nav(v-if="this.$vuetify.breakpoint.lg")
-        Contact-button(text="CONTACT")
+        Contact-button(text="CONTACT", :className="true")
 
 </template>
 
