@@ -1,7 +1,7 @@
 <template lang='pug'>
   .section.section-label(id='section-label')
     section-title(text='LABEL')
-    a.section-anchor(id='Label')
+    a.section-anchor(id='LABEL')
     .section-main
       .section-wrapper
         .border-title

@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.header-contact
+  div(:class="[absolute ? 'header-contact' : '']")
     span
       a.cta-button(:class="[className ? 'black-button' : 'white-button']" title="hire-me") {{ text }}
 </template>
@@ -8,7 +8,8 @@
 export default {
   props: {
     text: String,
-    className: Boolean
+    className: Boolean,
+    absolute: Boolean
   }
 }
 </script>
@@ -32,7 +33,8 @@ export default {
   }
 
   .header-contact {
-    display: inline-block;
+    position: absolute;
+    right: 15%;
   }
 
   .black-button {
@@ -42,7 +44,7 @@ export default {
   }
 
   .black-button:hover {
-    background: transparent;
+    background: #fff;
     border: 2px solid #000 !important;
     color: #000 !important;
   }
@@ -55,6 +57,8 @@ export default {
   }
 
   .white-button:hover {
-    color: #000 !important;
+    color: #fff !important;
+    background: #000;
+    border: 2px solid #fff !important;
   }
 </style>

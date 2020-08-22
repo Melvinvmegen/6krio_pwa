@@ -6,12 +6,16 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { securedAxioSIntance, plainAxiosIntance } from './backend/axios/axios'
 import Vuelidate from 'vuelidate'
+import 'animate.css'
+import VueObserveVisibility from 'vue-observe-visibility'
 
 Vue.prototype.$workbox = wb
 Vue.config.productionTip = false
 
 axios.defaults.baseURL = 'https://krio-records.firebaseio.com/'
 axios.defaults.headers.get.Accepts = 'application/json'
+
+Vue.use(VueObserveVisibility)
 Vue.use(VueAxios, {
   secured: securedAxioSIntance,
   plain: plainAxiosIntance
