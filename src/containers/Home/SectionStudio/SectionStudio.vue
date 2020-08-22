@@ -1,7 +1,7 @@
 <template lang="pug">
   .section.section-studio(id="section-studio")
     section-title(text="STUDIO" :rightSide="true")
-    a.section-anchor(id='Studio')
+    a.section-anchor(id='STUDIO')
     .section-main
       .section-wrapper
         .border-title

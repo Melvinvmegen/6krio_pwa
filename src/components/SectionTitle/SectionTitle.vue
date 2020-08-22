@@ -1,8 +1,9 @@
 <template lang="pug">
-  .section-title(:class="{ rightSide: rightSide }")
-    .section-title-container(:class="{ rightBorderRadius: rightSide }")
-      .section-title-inner-border(:class="{ leftBorder: rightSide }")
-        .section-title-inner(:class="{ rightPosition: rightSide }") {{ text }}
+  .section-title.animate__animated(:class="{ rightSide: rightSide}" v-observe-visibility="{ callback: setActive, once: true }")
+    transition(:enter-active-class="enterActiveClass")
+      .section-title-container(:class="{ rightBorderRadius: rightSide }" v-if="isVisible")
+        .section-title-inner-border(:class="{ leftBorder: rightSide }")
+          .section-title-inner(:class="{ rightPosition: rightSide }") {{ text }}
 </template>
 
 <script>
@@ -10,6 +11,21 @@ export default {
   props: {
     text: String,
     rightSide: Boolean
+  },
+  data () {
+    return {
+      isVisible: Boolean
+    }
+  },
+  computed: {
+    enterActiveClass: function () {
+      return this.rightSide ? 'animate__animated animate__backInLeft' : 'animate__animated animate__backInRight'
+    }
+  },
+  methods: {
+    setActive (isVisible, entry) {
+      this.isVisible = isVisible
+    }
   }
 }
 </script>

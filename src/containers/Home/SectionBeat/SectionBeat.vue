@@ -1,7 +1,7 @@
 <template lang="pug">
-  .section.section-one(id="section-beat")
+  .section.section-one(id="section-beats")
     section-title(text="BEATS")
-    a.section-anchor(id='Beat')
+    a.section-anchor(id='BEATS')
     .section-main
       .section-wrapper
         .border-title

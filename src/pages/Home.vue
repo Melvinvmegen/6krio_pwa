@@ -3,8 +3,6 @@
     Header
     Banner
     Home
-    //- Gallery
-    //- Testimonials
     Footer
 </template>
 
@@ -12,8 +10,6 @@
 import Header from '@/containers/Header/Header'
 import Banner from '@/containers/Banner/Banner'
 import Home from '@/containers/Home/Home'
-// import Gallery from '@/containers/Gallery/Gallery'
-// import Testimonials from '@/containers/Testimonials/Testimonials'
 import Footer from '@/containers/Footer/Footer'
 
 export default {
@@ -51,7 +47,7 @@ export default {
 
   .section-anchor {
     position: absolute;
-    top: -106px;
+    top: -120px;
   }
 
   .white {

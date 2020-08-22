@@ -3,7 +3,7 @@
     .site-header-wrapper(:class="{'sticky-header': sticky, 'disappear' : disappear}")
       header(:class="{'mobile mobile-menu': showMobileNav, 'main-header' : !showMobileNav}")
         Nav(v-if="this.$vuetify.breakpoint.lg")
-        Contact-button(text="CONTACT", :className="true")
+        Contact-button(text="CONTACT", :className="true", :absolute="true")
 
 </template>
 
@@ -84,10 +84,14 @@ export default {
     position: fixed;
     width: 100vw;
     transition: top .5s ease 0s;
-    background: #fff;
+    background: #000;
     z-index: 5;
     border-bottom: 1px solid #eee;
     top: 0;
+  }
+
+  .sticky-header {
+
   }
 
   .disappear {
@@ -153,14 +157,15 @@ export default {
     vertical-align: middle;
   }
 
-  .main-header h1 a {
+  .main-header h1 span {
     font-size: 36px;
   }
 
-  .main-header a {
-    font-size: 16px;
+  .main-header span {
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    color: #fff
   }
 
   .nav-bar {

@@ -1,7 +1,7 @@
 <template lang="pug">
   .section.section-team(id="section-team")
     section-title(text="TEAMS" :rightSide="true")
-    a.section-anchor(id='team')
+    a.section-anchor(id='TEAM')
     .section-main
       .section-wrapper
         .border-title
