@@ -19,7 +19,7 @@ export default {
   },
   computed: {
     enterActiveClass: function () {
-      return this.rightSide ? 'animate__animated animate__backInLeft' : 'animate__animated animate__backInRight'
+      return this.rightSide ? 'animate__animated animate__backFromLeft' : 'animate__animated animate__backFromRight'
     }
   },
   methods: {
@@ -94,5 +94,49 @@ export default {
     position: absolute;
     bottom: -3px;
     border-left: none;
+  }
+
+  .animate__animated .animate__backFromLeft {
+      -webkit-animation-name: backFromLeft;
+      animation-name: backFromLeft;
+  }
+
+  @keyframes backFromLeft {
+    0% {
+      -webkit-transform: translateX(-2000px);
+      transform: translateX(-2000px);
+      opacity: 0.7;
+    }
+
+    80% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate__animated .animate__backFromRight {
+      -webkit-animation-name: backFromRight;
+      animation-name: backFromRight;
+  }
+
+  @keyframes backFromRight {
+    0% {
+      -webkit-transform: translateX(2000px);
+      transform: translateX(2000px);
+      opacity: 0.7;
+    }
+
+    80% {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 </style>
