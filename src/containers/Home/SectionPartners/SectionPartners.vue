@@ -19,12 +19,12 @@ export default {
   data () {
     return {
       partners: [
-        { logo: 'https://source.unsplash.com/random/150x150', href: '' },
-        { logo: 'https://source.unsplash.com/random/150x150', href: '' },
-        { logo: 'https://source.unsplash.com/random/150x150', href: '' },
-        { logo: 'https://source.unsplash.com/random/150x150', href: '' },
-        { logo: 'https://source.unsplash.com/random/150x150', href: '' },
-        { logo: 'https://source.unsplash.com/random/150x150', href: '' }
+        { name: '1', logo: 'https://source.unsplash.com/random/200x200', href: '' },
+        { name: '2', logo: 'https://source.unsplash.com/random/200x200', href: '' },
+        { name: '3', logo: 'https://source.unsplash.com/random/200x200', href: '' },
+        { name: '4', logo: 'https://source.unsplash.com/random/200x200', href: '' },
+        { name: '5', logo: 'https://source.unsplash.com/random/200x200', href: '' },
+        { name: '6', logo: 'https://source.unsplash.com/random/200x200', href: '' }
       ]
     }
   }
